@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
 
 class Dog:
-    # Class body goes here
+    def __init__(self, name):
+        self.name = name
+        self.is_sitting = False  # Initialize is_sitting to False
 
-    #Instance method definition
-    pass
+    def bark(self):
+        print("woof!")
+
+    def sit(self):
+        self.is_sitting = True
+
+    def stand(self):
+        self.is_sitting = False
